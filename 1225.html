@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <title>听不懂人话？</title>
+    <style>
+    .p:hover {
+        color: red;
+    }
+    </style>
 </head>
+
 <body>
     <h1>我踏马说了没链接</h1>
     <img src="pic/blindmy.png">
+    <p>有<img src="https://w.saobby.com/w/y0arkl07">个神秘人点了这个链接</p>
+    <p>结果他什么都没看到</p>
+    <a class="p">点我求你了</a>
+    <audio id="bgm" src="audio/findher.ogg" loop></audio>
 </body>
+<script>
+  window.addEventListener('click', function() {
+    const audio = document.getElementById('bgm');
+    audio.play();
+  }, { once: true }); // 只触发一次
+</script>
 </html>
